@@ -1,13 +1,27 @@
 <div class="card">
-    <p-inplace closable="closable">
-        <ng-template pTemplate="closeicon">
-            <p-button icon="pi pi-check" styleClass="p-button-rounded p-button-secondary"></p-button>
-        </ng-template>
-        <ng-template pTemplate="display">
-            <span>Click to Edit</span>
-        </ng-template>
-        <ng-template pTemplate="content">
-            <input type="text" value="PrimeNG" pInputText />
-        </ng-template>
-    </p-inplace>
+  <p-inplace closable="closable">
+    <ng-template pTemplate="closeicon">
+      <p-button
+        icon="pi pi-check"
+        styleClass="p-button-rounded p-button-secondary"
+      ></p-button>
+    </ng-template>
+    <ng-template pTemplate="display">
+      <span>Click to Edit</span>
+    </ng-template>
+    <ng-template pTemplate="content">
+      <input type="text" value="PrimeNG" pInputText />
+    </ng-template>
+  </p-inplace>
+</div>
+
+<div class="card">
+  <p-inplace closable="closable">
+    <ng-template pTemplate="display">
+      <span>{{testinput}}</span>
+    </ng-template>
+    <ng-template pTemplate="content">
+      <input type="text" [(value)]="testinput" pInputText />
+    </ng-template>
+  </p-inplace>
 </div>
